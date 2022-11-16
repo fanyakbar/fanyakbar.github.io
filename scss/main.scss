@@ -1,0 +1,156 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// Variables
+$primaryColor: #30c5cc;
+$secondaryColor: #283e71;
+$tertiaryColor: #1bafaf;
+
+// Mixins
+@mixin tombol {
+  display: inline-block;
+  color: white;
+  background-color: $secondaryColor;
+  border-radius: 2em;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+}
+
+// Style
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #c6f4ff;
+  background-image: url(../img/bg.png);
+  background-position: top right, top left 0.5em;
+  background-repeat: no-repeat;
+  background-size: 70vmax;
+}
+
+// Navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 86px;
+      height: 70px;
+    }
+  }
+  #navbarNavAltMarkup {
+    .navbar-nav {
+      .nav-link {
+        color: $primaryColor;
+        font-weight: 700;
+        margin-left: 1.8em;
+
+        &:hover {
+          color: darken($primaryColor, 50%);
+        }
+      }
+      .get-started-button {
+        background-color: $secondaryColor;
+        color: white;
+        border-radius: 2em;
+        border: 1px solid transparent;
+        padding-left: 1em;
+        padding-right: 1em;
+        transition: 1s ease;
+
+        &:hover {
+          color: darken($tertiaryColor, 50%);
+          background-color: #c6f4ff;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .navbar-brand {
+      img {
+        width: 66px;
+        height: 50px;
+      }
+    }
+  }
+}
+// Content
+.custom-section {
+  margin-top: 4em;
+  h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+    color: $secondaryColor;
+  }
+  h3 {
+    color: $tertiaryColor;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 3em;
+    font-size: 13px;
+    color: $tertiaryColor;
+  }
+  a {
+    @include tombol;
+    font-size: 13px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $secondaryColor;
+      background-color: white;
+      border: 1px solid $secondaryColor;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 0.1em;
+    text-align: center;
+    padding-top: 20em;
+    h3 {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    p {
+      color: darken($secondaryColor, 30%);
+    }
+  }
+}
+
+// Sosmed
+.custom-sosmed {
+  margin-top: 5em;
+  padding-left: 5em;
+
+  a:hover {
+    background: #fff !important;
+    color: #222 !important;
+  }
+  .social-media-icon {
+    padding: 7px 7px 7px 7px;
+    background: #222;
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+  }
+  .facebook {
+    background-color: #3c5a98 !important;
+    border-radius: 4em;
+    transition: 0.5s ease;
+  }
+  .twitter {
+    background: #1da1f2 !important;
+    border-radius: 4em;
+    transition: 0.5s ease;
+  }
+  .instagram {
+    background: #c32aa3 !important;
+    border-radius: 4em;
+    transition: 0.5s ease;
+  }
+  @media screen and(max-width: 992px) {
+    margin-top: 2em;
+    text-align: center;
+    padding-left: 0;
+    padding: 3em;
+  }
+}

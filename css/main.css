@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #c6f4ff;
+  background-image: url(../img/bg.png);
+  background-position: top right, top left 0.5em;
+  background-repeat: no-repeat;
+  background-size: 70vmax;
+}
+
+.custom-nav .navbar-brand img {
+  width: 86px;
+  height: 70px;
+}
+
+.custom-nav #navbarNavAltMarkup .navbar-nav .nav-link {
+  color: #30c5cc;
+  font-weight: 700;
+  margin-left: 1.8em;
+}
+
+.custom-nav #navbarNavAltMarkup .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.custom-nav #navbarNavAltMarkup .navbar-nav .get-started-button {
+  background-color: #283e71;
+  color: white;
+  border-radius: 2em;
+  border: 1px solid transparent;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.custom-nav #navbarNavAltMarkup .navbar-nav .get-started-button:hover {
+  color: black;
+  background-color: #c6f4ff;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav .navbar-brand img {
+    width: 66px;
+    height: 50px;
+  }
+}
+
+.custom-section {
+  margin-top: 4em;
+}
+
+.custom-section h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #283e71;
+}
+
+.custom-section h3 {
+  color: #1bafaf;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.custom-section p {
+  margin-top: 3em;
+  font-size: 13px;
+  color: #1bafaf;
+}
+
+.custom-section a {
+  display: inline-block;
+  color: white;
+  background-color: #283e71;
+  border-radius: 2em;
+  padding: 0.3em 0.8em;
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section a:hover {
+  color: #283e71;
+  background-color: white;
+  border: 1px solid #283e71;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 0.1em;
+    text-align: center;
+    padding-top: 20em;
+  }
+  .custom-section h3 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .custom-section p {
+    color: black;
+  }
+}
+
+.custom-sosmed {
+  margin-top: 5em;
+  padding-left: 5em;
+}
+
+.custom-sosmed a:hover {
+  background: #fff !important;
+  color: #222 !important;
+}
+
+.custom-sosmed .social-media-icon {
+  padding: 7px 7px 7px 7px;
+  background: #222;
+  color: #fff;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.custom-sosmed .facebook {
+  background-color: #3c5a98 !important;
+  border-radius: 4em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-sosmed .twitter {
+  background: #1da1f2 !important;
+  border-radius: 4em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-sosmed .instagram {
+  background: #c32aa3 !important;
+  border-radius: 4em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-sosmed {
+    margin-top: 2em;
+    text-align: center;
+    padding-left: 0;
+    padding: 3em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
